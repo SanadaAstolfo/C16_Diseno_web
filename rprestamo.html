@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros de Préstamo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/solicitud.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #862F2F;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:void(0)">
+            <img src="img/Logo.png" alt="Logo" style="border-radius: 20px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Bibliotecario</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="solicitudes.html">Solicitudes de Préstamo</a></li>
+                        <li><a class="dropdown-item" href="rprestamo.html">Registros</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Catálogo</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Catalogo.html">Consulta</a></li>
+                        <li><a class="dropdown-item" href="CatalogoLibros.html">Libros</a></li>
+                        <li><a class="dropdown-item" href="CatalogoMultimedia.html">Multimedia</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Preguntas</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FichaPerfil.html">Perfil</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" id="buscar" placeholder="Buscar" style="border-radius: 50px;">
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="background-image"><div class="bg-image" style="background-image: url('img/background.png'); height: 91vh; background-position: center; background-repeat: no-repeat;background-size: cover;">
+    <div class="container-fluid">
+        <h2 class="text-center titulo-solicitudes">Registro de Préstamo</h2>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <form>
+                    <div class="registroprestamo">
+                        <div class="row mb-3">
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" class="form-control-prestamo" id="usuario" style="height: 45px">
+                        </div>
+                        <div class="row mb-3">
+                            <label for="documento">Documento:</label>
+                            <input type="text" class="form-control-prestamo" id="documento" style="height: 45px">
+                        </div>
+                        <div class="row mb-3">
+                            <label for="fecha">Fecha de Préstamo:</label>
+                            <input type="date" class="form-control-prestamo" id="fecha" style="height: 45px">
+                        </div>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFichaPrestamo">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalFichaPrestamo" tabindex="-1" aria-labelledby="modalFichaPrestamoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalFichaPrestamoLabel">Registro del Préstamo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>ID del Préstamo: <span id="fichaIdPrestamo"></span></p>
+                <p>Usuario: <span id="fichaIdEjemplar"></span></p>
+                <p>Documento: <span id="fichaTitulo"></span></p>
+                <p>Fecha de Préstamo: <span id="fichaFechaPrestamo"></span></p>
+                <p>Fecha de Devolución: <span id="fichaFechaDevolucion"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

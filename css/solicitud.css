@@ -1,0 +1,168 @@
+
+.bg-custom-color {
+	background-color: rgba(134.00000721216202, 47.0000009983778, 47.0000009983778, 1);
+}
+.letras {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Roboto', 'Times New Roman', Times, serif;
+	letter-spacing: 0;
+	font-size: 1.875rem;
+	font-weight: normal;
+	text-decoration: none;
+	width: 9.625rem;
+	height: 2.5rem;
+}
+.background-image {
+	background-image: url("../img/background.png");
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+}
+.logo {
+	display: inline-flex;
+}
+.logo-svg {
+	width: 4rem;
+	height: 4rem;
+	fill: white;
+	margin-right: 0.625rem;
+	position: relative;
+}
+.logo-text {
+	color: rgba(134.00000721216202, 47.0000009983778, 47.0000009983778, 1);
+	font-size: 2rem;
+	margin: 0;
+	line-height: 1;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.table {
+	background-color: rgba(255, 255, 255, 0.6);
+	--bs-body-bg: #ffffff00;
+	--bs-border-color: #000000;
+}
+.tabla-comprobante {
+	border-radius: 1rem;
+	max-height: 100px;
+    overflow-y: auto;
+	width: 60%;
+}
+.btnaceptar {
+	background-color: #4CAF50;
+    border: none;
+    border-radius: 3.125rem;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btnrechazar {
+	background-color: #D32F2F;
+	border: none;
+	border-radius: 3.125rem;
+	color: white;
+	padding: 5px 15px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+}
+.titulo-solicitudes {
+	max-height: 400px;
+    color: #ece3e3;
+	position: relative;
+    top: 20px;
+}
+.tabla-solicitudes {
+	border-radius: 1.5rem;
+	max-height: 100px;
+    overflow-y: auto;
+	width: 90%;
+}
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top: 45px;
+}
+.card {
+	background-color: rgba(255, 255, 255, 0.6);
+	display: flex;
+  	align-items: right;
+	margin-top: 45px;
+}
+.libro-info {
+	flex: 1;
+}
+.libro-imagen {
+	float: right;
+	max-height: 30%;
+	max-width: 30%;
+	object-fit: cover;
+	margin-left: 10px;
+}
+.registroprestamo {
+    color: #ffffff;
+	margin-bottom: 15px;
+	text-align: center;
+	height: 45px;
+	margin-top: 45px;
+}
+.texto-blanco {
+    color: #ffffff;
+}
+.form-control-prestamo {
+    background-color: rgba(250,250,250,0.6);
+    border: 0.06rem solid rgb(75, 20, 20);
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+	height: 45px;
+	width: 50%;
+	margin: 0 auto;
+}
+.form-control-reserva {
+    background-color: rgba(250,250,250,0.6);
+    border: 0.06rem solid rgb(75, 20, 20);
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+	height: 45px;
+	width: 50%;
+	margin: 0 auto;
+}
+.form-select-documento{
+    background-color: rgba(250,250,250,0.6);
+    border: 0.06rem solid rgb(75, 20, 20);
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+	height: 45px;
+	width: 50%;
+	margin: 0 auto;
+}
+.reservadocumento{
+    color: #ffffff;
+	margin-bottom: 15px;
+	text-align: center;
+	height: 45px;
+	margin-top: 45px;
+}
+.mensaje-aceptado {
+    color: green;
+    margin-left: 10px;
+}
+.mensaje-rechazado {
+    color: red;
+    margin-left: 10px;
+}
+.navbar-nav .nav-link {
+    font-family: "ofl Sorts Mill Goudy TT", serif;
+	font-size: 22.5px;
+	color: white;
+}
+#buscar {
+    margin-top: 20px; /* Ajusta la posición de la barra de búsqueda */
+}
